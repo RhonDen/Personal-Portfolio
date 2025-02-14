@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR*/ 
+.navbar{
+    background: #44BBCB; font-family: Arial, Helvetica, sans-serif; padding-right: 15px;padding-left: 15px;
+    position: sticky;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
+}
+.logo a{
+    font-size: 35px; font-weight: 600; color: rgb(0, 0, 0);
+    font-family: 'Valorant Font';
+}
+li{
+    list-style: none; display: inline-block;
+}
+li a{
+    color: rgb(255, 255, 255); font-size: 25px; font-weight: bold; margin-right: 35px;
+}
+/* ---------------*/
+
+
+
+/* Button From NAvigator*/ 
+.button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6em 2em;
+    border: mediumspringgreen solid 0.15em;
+    border-radius: 0.25em;
+    color: mediumspringgreen;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+  }
+  
+  .button button {
+    z-index: 1;
+  }
+  
+  .button:hover {
+    color: #212121;
+  }
+  
+  .button:active {
+    border-color: teal;
+  }
+  
+  .button::after, .button::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: mediumspringgreen;
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  
+  .button::before {
+    left: 0;
+    transform: translateX(-8em);
+  }
+  
+  .button::after {
+    right: 0;
+    transform: translateX(8em);
+  }
+  
+  .button:hover:before {
+    transform: translateX(-1em);
+  }
+  
+  .button:hover:after {
+    transform: translateX(1em);
+  }
+  
+  .button:active:before,
+  .button:active:after {
+    background: teal;
+  }
+
+
+  body{
+    background-color: #44BBCB;
+}
+/* ---------------*/
+
+/* Container For profile pic*/ 
+.container{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 15%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+
+    object-fit: cover;
+   
+}
+/* ---------------*/
+
+
+/* profile pic with transitions*/
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 350px;
+    height: 350Px;
+    position: relative;
+    top: 10%;
+    right: 30%;
+    
+}
+/* ---------------*/
+
+/* Name Info*/
+.NAMEinfoMain {
+    position: absolute;
+    top: 30%; 
+    right: 58%; 
+    
+}
+
+
+.NAMEinfo {
+
+    font-family:'Valorant Font' ;
+   
+}
+
+/* ---------------*/
+
+/* FONTS*/
+
+@font-face {
+   font-family: 'Valorant Font'; 
+    src:url( Valorant\ Font.ttf) 
+}
+/* ---------------*/
+
+/* BAR GRAPHS*/
+
+.Bars h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 70px 0 0;
+	color: #fff;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 80px;
+}
+.Bars h2 {
+	text-align: left;
+	color: #fff;
+	font-weight: 300;
+	font-size: 20px;
+}
+.Bars {
+    position: relative; /* Ensures it moves normally */
+    margin-top: 45%; /* Adjust as needed */
+    width: 700px;
+    left: 15%;
+}
+
+.line {
+	height: 35px;
+	max-width: 800px;
+	margin: 0 auto 10px auto;
+	line-height: 35px;
+	font-size: 15px;
+	color: white;
+	padding: 0 0 0 10px;
+	position: relative;
+	background: #262626;
+	border-radius: 50px;
+	z-index: -2;
+	font-weight: 900;
+	box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+.line::before {
+	content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	height: 25px;
+	top: 0;
+	z-index: -2;
+}
+.line::after {
+	content: '';
+	background: linear-gradient(45deg, #ee0979, #ff6a00);
+	height: 35px;
+	transition: 0.7s;
+	display: block;
+	width: 100%;
+	animation: animate 1 4s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 50px;
+}
+.line1::after {
+	max-width: 90%;
+}
+.line2::after {
+	max-width: 30%;
+}
+.line3::after {
+	max-width: 55%;
+}
+.line4::after {
+	max-width: 30%;
+}
+@keyframes animate {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+   
+}
+/* ---------------*/
+
+.cog {
+    width: 400px;
+    
+    position: relative;
+    height: 15%;
+    left: 9%;
+}
+
+/* BAR GRAPHS*/
+
+.Bars2 h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 70px 0 0;
+	color: #fff;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 80px;
+}
+.Bars2 h2 {
+	text-align: left;
+	color: #fff;
+	font-weight: 300;
+	font-size: 20px;
+}
+.Bars2 {
+    position: relative; /* Ensures it moves normally */
+    margin-top: 7%; /* Adjust as needed */
+    width: 700px;
+    left: 15%;
+}
+
+.line {
+	height: 35px;
+	max-width: 800px;
+	margin: 0 auto 10px auto;
+	line-height: 35px;
+	font-size: 15px;
+	color: white;
+	padding: 0 0 0 10px;
+	position: relative;
+	background: #262626;
+	border-radius: 50px;
+	z-index: -2;
+	font-weight: 900;
+	box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+.line::before {
+	content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	height: 25px;
+	top: 0;
+	z-index: -2;
+}
+.line::after {
+	content: '';
+	background: linear-gradient(45deg, #ee0979, #ff6a00);
+	height: 35px;
+	transition: 0.7s;
+	display: block;
+	width: 100%;
+	animation: animate 1 4s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 50px;
+}
+.line1::after {
+	max-width: 90%;
+}
+.line2::after {
+	max-width: 70%;
+}
+.line3::after {
+	max-width: 55%;
+}
+.line4::after {
+	max-width: 30%;
+}
+@keyframes animate {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+   
+}
+/* ---------------*/
