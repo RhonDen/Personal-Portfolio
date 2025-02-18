@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <link rel="stylesheet" href="Styles.css">
     <title>Personal Portfolio</title>
 </head>
-<body>
+<header>
+
     <nav class="navbar">
 		<div class="navdiv">
 			<div class="logo"><a href="#">WELCOME TO MY PORTFOLIO</a> 
+                
+
+            
+                  
             </div>
-			<ul >
-				<li><a href="#"><button class="button">Home  </a></button></li>
-				<li><a href="#"><button class="button">About</a></button></li>
-				<li><a href="#"><button class="button">Contact</a></button></li>
 
-
-
-			</ul>
+            <ul>
+                <li><a href="#NAMEinfoMain" class="button">About</a></li>
+                <li><a href="#Bars" class="button">Skills</a></li>
+                <li><a href="#contacts" class="button">Contact</a></li>
+            </ul>
+            
 		</div>
 	</nav>
+</header>
 
-
+    <body>
+    <section class="Main" id="NAMEinfoMain">
     <div class="container">
         <div class="wrapper">
             <img src="OnePIC.png" >
@@ -32,17 +39,71 @@
             
         </div>
     </div>
+
+    
                     <div class="NAMEinfoMain">
-                        <h1 class="NAMEinfo" >Name:</h1>
-                        <h1 class="NAMEinfo">Age:</h1>
-                        <h1 class="NAMEinfo">Occupation:</h1>
+                        <h1 class="NAMEinfo" >          Name: Rhon Denver Dulay</h1>
+                        <h1 class="NAMEinfo">           Age: 20 Years Old</h1>
+                        <h1 class="NAMEinfo">           Occupation: University Student</h1>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h3>About Me <br>
+
+                            Hello!! my name is Rhon Denver S. Dulay and I am an aspiring <br> IT professional with hands-on experience in various web and technical projects. <br> I am currently studying at the 
+                            <a href="https://www.uc-bcf.edu.ph/">University of the cordilleras</a> <br>
+                            enrolled on the program of BSIT <br> (BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY ) major in Web Technology</h3>
                     </div>
+                    <div class="audio-container">
+                        <img id="playPauseBtn" class="control-btn" src="play.png" alt="Play">
+                        <img id="repeatBtn" class="control-btn" src="repeat-off.png" alt="Repeat">
+                        <audio id="audio">
+                            <source src="CaliforniaLove.mp3" type="audio/mpeg">
+                        </audio>
+                        
+                    </div>
+                    <div class="containermore">
+                        <div class="more">
+                            <h1>MORE ABOUT ME</h1>
+                            <ul>
+                                <li>
+                                    <div class="image-container">
+                                        <img src="Connor.gif" alt="Gamer br">
+                                    </div>
+                                    <h2>Gamer </h2>
+                                </li>
+                                <li>
+                                    <div class="image-container">
+                                        <img src="shortnsweet.jfif" alt="MUSIC">
+                                    </div>
+                                    <h2>LOVES MUSIC</h2>
+                                </li>
+                                <li>
+                                    <div class="image-container">
+                                        <img src="CYBERPUNK.gif" alt="ANIME">
+                                    </div>
+                                    <h2>LOVES ANIME</h2>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+           
 
-
+           
+            <section class="Main" id="Bars">
+            </section>
+                    <div class="jingyuan">
+                        <h1>My skills</h1>
+                        <img src="ads.gif" alt="">
+                    </div>
                             <div class="Bars">
+                                
                                 <h1>IT SKILLS</h1>
                                 <br><br>
-                                <h2>HTML/h2>
+                                <h2>HTML</h2>
                                 <div class="line line1">90%</div>
                                 <h2>JAVA</h2>
                                 <div class="line line2">30%</div>
@@ -67,5 +128,67 @@
                                     <h2>Photography</h2>
                                     <div class="line line4">30%</div>
                                 </div>
-                </body>
+            
+
+
+            
+                                <section class="recently">
+                                    <h1>My recent Projects</h1>
+                                    <div class="gallery">
+                                        <div class="sect">
+                                        <h2>1. Product landing Page </h2>
+                                        <a href="https://nissangtrskyline.vercel.app/">
+                                            <img src="gtr.gif" alt="Description of Image 1">
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="sect">
+                                        <h2>2. Technical documentation</h2>
+                                        <a href="https://technical-documentation-teal.vercel.app/">
+                                            <img src="book.gif" alt="Description of Image 2">
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="sect">
+                                        <h2>3. Tribute Page</h2>
+                                        <a href="https://napoleonbonapartetributepage.vercel.app/">
+                                            <img src="napoli.gif" alt="Description of Image 3">
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="sect">
+                                        <h2>4. Survey Form</h2>
+                                        <a href="https://surveyform-silk.vercel.app/">
+                                            <img src="survey.gif" alt="Description of Image 4">
+                                        </a>
+                                    </div>
+                                </div>
+                                </section>
+                                
+                                
+                                
+                                <section class="contacts" id="contacts">
+                                    <h1>Contacts / Socials</h1>
+                                    <div class="social-links">
+                                        <a href="https://www.facebook.com/RudeusRatgrey" class="social-btn">
+                                            <img src="Facebook.png" alt="Facebook">
+                                        </a>
+                                        <a href="https://www.instagram.com/rhon.denver/" class="social-btn">
+                                            <img src="insta.jfif" alt="Instagram">
+                                        </a>
+                                        <a href="https://github.com/RhonDen" class="social-btn">
+                                            <img src="github.png" alt="GitHub">
+                                        </a>
+                                    </div>
+                                </section>
+                                
+                                
+                
+                                <script src="script.js"></script>
+                            </body>
+
+
+                            <footer> 
+                                <p>all rights recieved 2025</p>
+                            </footer>
         </html>
